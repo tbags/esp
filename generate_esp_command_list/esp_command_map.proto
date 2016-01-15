@@ -1,0 +1,59 @@
+package esp_command_map;
+
+message AtMap {
+  required string generic_trm = 1;
+  required string at_command = 2;
+  
+  message Value {
+    optional string ip = 1;
+    enum Mux {
+      SINGLE = 0;
+      MULTI_CHANNEL = 1;
+    }
+    optional Mux mux = 2;
+    
+    enum Connection {
+      STATION = 1;
+      ACCESS_POINT = 2;
+      STATION_AP = 3;
+    }
+    optional Connection connection_mode = 3;
+    
+    message ConnectAp {
+      required string ssid = 1;
+      optional string pwd = 2;
+      optional string bssid = 3;
+    }
+    optional ConnectAp connect_ap = 4
+
+    message ConfigAP {
+      required string ssid = 1;
+      optional string pwd = 2;
+      optional int32 channel_id = 3;
+      
+      enum Ecn {
+        OPEN = 0;
+	WPA_PSK = 1;
+	WPA2_PSK = 2;
+	WPA_WPA2_PSK = 3;     
+      }
+      optional Ecn ecn = 4;
+    }
+    optional ConfigAp config_ap = 5;
+
+    message DhcpMode {
+    // NEEDS REVIEW
+      required Connection mode = 1;
+      enum En {
+        DISABLE = 0;
+	ENABLE = 1;
+      }
+      required En en = 2;
+    }
+    optional DhcpMode dhcp_mode = 6;
+
+  }
+  optional Value at_parameters = 3;
+}
+
+

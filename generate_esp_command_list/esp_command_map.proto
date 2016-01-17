@@ -24,9 +24,9 @@ message AtMap {
       optional string pwd = 2;
       optional string bssid = 3;
     }
-    optional ConnectAp connect_ap = 4
+    optional ConnectAp connect_ap = 4;
 
-    message ConfigAP {
+    message ConfigAp {
       required string ssid = 1;
       optional string pwd = 2;
       optional int32 channel_id = 3;

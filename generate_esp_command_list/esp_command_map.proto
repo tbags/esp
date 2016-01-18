@@ -3,7 +3,7 @@ package esp_command_map;
 message AtMap {
   required string generic_trm = 1;
   required string at_command = 2;
-  
+  required int32 order = 3;
   message Value {
     optional string ip = 1;
     enum Mux {
@@ -53,7 +53,9 @@ message AtMap {
     optional DhcpMode dhcp_mode = 6;
 
   }
-  optional Value at_parameters = 3;
+  optional Value at_parameters = 4;
 }
 
-
+message AtCommand {
+ repeated AtMap at_map = 1;
+ }

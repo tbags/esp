@@ -18,7 +18,7 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='esp_command_map.proto',
   package='esp_command_map',
-  serialized_pb=_b('\n\x15\x65sp_command_map.proto\x12\x0f\x65sp_command_map\"\x81\x07\n\x05\x41tMap\x12\x13\n\x0bgeneric_trm\x18\x01 \x02(\t\x12\x12\n\nat_command\x18\x02 \x02(\t\x12\x33\n\rat_parameters\x18\x03 \x01(\x0b\x32\x1c.esp_command_map.AtMap.Value\x1a\x99\x06\n\x05Value\x12\n\n\x02ip\x18\x01 \x01(\t\x12-\n\x03mux\x18\x02 \x01(\x0e\x32 .esp_command_map.AtMap.Value.Mux\x12@\n\x0f\x63onnection_mode\x18\x03 \x01(\x0e\x32\'.esp_command_map.AtMap.Value.Connection\x12:\n\nconnect_ap\x18\x04 \x01(\x0b\x32&.esp_command_map.AtMap.Value.ConnectAp\x12\x38\n\tconfig_ap\x18\x05 \x01(\x0b\x32%.esp_command_map.AtMap.Value.ConfigAp\x12\x38\n\tdhcp_mode\x18\x06 \x01(\x0b\x32%.esp_command_map.AtMap.Value.DhcpMode\x1a\x35\n\tConnectAp\x12\x0c\n\x04ssid\x18\x01 \x02(\t\x12\x0b\n\x03pwd\x18\x02 \x01(\t\x12\r\n\x05\x62ssid\x18\x03 \x01(\t\x1a\xaf\x01\n\x08\x43onfigAp\x12\x0c\n\x04ssid\x18\x01 \x02(\t\x12\x0b\n\x03pwd\x18\x02 \x01(\t\x12\x12\n\nchannel_id\x18\x03 \x01(\x05\x12\x36\n\x03\x65\x63n\x18\x04 \x01(\x0e\x32).esp_command_map.AtMap.Value.ConfigAp.Ecn\"<\n\x03\x45\x63n\x12\x08\n\x04OPEN\x10\x00\x12\x0b\n\x07WPA_PSK\x10\x01\x12\x0c\n\x08WPA2_PSK\x10\x02\x12\x10\n\x0cWPA_WPA2_PSK\x10\x03\x1a\x96\x01\n\x08\x44hcpMode\x12\x35\n\x04mode\x18\x01 \x02(\x0e\x32\'.esp_command_map.AtMap.Value.Connection\x12\x34\n\x02\x65n\x18\x02 \x02(\x0e\x32(.esp_command_map.AtMap.Value.DhcpMode.En\"\x1d\n\x02\x45n\x12\x0b\n\x07\x44ISABLE\x10\x00\x12\n\n\x06\x45NABLE\x10\x01\"$\n\x03Mux\x12\n\n\x06SINGLE\x10\x00\x12\x11\n\rMULTI_CHANNEL\x10\x01\";\n\nConnection\x12\x0b\n\x07STATION\x10\x01\x12\x10\n\x0c\x41\x43\x43\x45SS_POINT\x10\x02\x12\x0e\n\nSTATION_AP\x10\x03')
+  serialized_pb=_b('\n\x15\x65sp_command_map.proto\x12\x0f\x65sp_command_map\"\x90\x07\n\x05\x41tMap\x12\x13\n\x0bgeneric_trm\x18\x01 \x02(\t\x12\x12\n\nat_command\x18\x02 \x02(\t\x12\r\n\x05order\x18\x03 \x02(\x05\x12\x33\n\rat_parameters\x18\x04 \x01(\x0b\x32\x1c.esp_command_map.AtMap.Value\x1a\x99\x06\n\x05Value\x12\n\n\x02ip\x18\x01 \x01(\t\x12-\n\x03mux\x18\x02 \x01(\x0e\x32 .esp_command_map.AtMap.Value.Mux\x12@\n\x0f\x63onnection_mode\x18\x03 \x01(\x0e\x32\'.esp_command_map.AtMap.Value.Connection\x12:\n\nconnect_ap\x18\x04 \x01(\x0b\x32&.esp_command_map.AtMap.Value.ConnectAp\x12\x38\n\tconfig_ap\x18\x05 \x01(\x0b\x32%.esp_command_map.AtMap.Value.ConfigAp\x12\x38\n\tdhcp_mode\x18\x06 \x01(\x0b\x32%.esp_command_map.AtMap.Value.DhcpMode\x1a\x35\n\tConnectAp\x12\x0c\n\x04ssid\x18\x01 \x02(\t\x12\x0b\n\x03pwd\x18\x02 \x01(\t\x12\r\n\x05\x62ssid\x18\x03 \x01(\t\x1a\xaf\x01\n\x08\x43onfigAp\x12\x0c\n\x04ssid\x18\x01 \x02(\t\x12\x0b\n\x03pwd\x18\x02 \x01(\t\x12\x12\n\nchannel_id\x18\x03 \x01(\x05\x12\x36\n\x03\x65\x63n\x18\x04 \x01(\x0e\x32).esp_command_map.AtMap.Value.ConfigAp.Ecn\"<\n\x03\x45\x63n\x12\x08\n\x04OPEN\x10\x00\x12\x0b\n\x07WPA_PSK\x10\x01\x12\x0c\n\x08WPA2_PSK\x10\x02\x12\x10\n\x0cWPA_WPA2_PSK\x10\x03\x1a\x96\x01\n\x08\x44hcpMode\x12\x35\n\x04mode\x18\x01 \x02(\x0e\x32\'.esp_command_map.AtMap.Value.Connection\x12\x34\n\x02\x65n\x18\x02 \x02(\x0e\x32(.esp_command_map.AtMap.Value.DhcpMode.En\"\x1d\n\x02\x45n\x12\x0b\n\x07\x44ISABLE\x10\x00\x12\n\n\x06\x45NABLE\x10\x01\"$\n\x03Mux\x12\n\n\x06SINGLE\x10\x00\x12\x11\n\rMULTI_CHANNEL\x10\x01\";\n\nConnection\x12\x0b\n\x07STATION\x10\x01\x12\x10\n\x0c\x41\x43\x43\x45SS_POINT\x10\x02\x12\x0e\n\nSTATION_AP\x10\x03\"3\n\tAtCommand\x12&\n\x06\x61t_map\x18\x01 \x03(\x0b\x32\x16.esp_command_map.AtMap')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -49,8 +49,8 @@ _ATMAP_VALUE_CONFIGAP_ECN = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=628,
-  serialized_end=688,
+  serialized_start=643,
+  serialized_end=703,
 )
 _sym_db.RegisterEnumDescriptor(_ATMAP_VALUE_CONFIGAP_ECN)
 
@@ -71,8 +71,8 @@ _ATMAP_VALUE_DHCPMODE_EN = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=812,
-  serialized_end=841,
+  serialized_start=827,
+  serialized_end=856,
 )
 _sym_db.RegisterEnumDescriptor(_ATMAP_VALUE_DHCPMODE_EN)
 
@@ -93,8 +93,8 @@ _ATMAP_VALUE_MUX = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=843,
-  serialized_end=879,
+  serialized_start=858,
+  serialized_end=894,
 )
 _sym_db.RegisterEnumDescriptor(_ATMAP_VALUE_MUX)
 
@@ -119,8 +119,8 @@ _ATMAP_VALUE_CONNECTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=881,
-  serialized_end=940,
+  serialized_start=896,
+  serialized_end=955,
 )
 _sym_db.RegisterEnumDescriptor(_ATMAP_VALUE_CONNECTION)
 
@@ -164,8 +164,8 @@ _ATMAP_VALUE_CONNECTAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=457,
-  serialized_end=510,
+  serialized_start=472,
+  serialized_end=525,
 )
 
 _ATMAP_VALUE_CONFIGAP = _descriptor.Descriptor(
@@ -215,8 +215,8 @@ _ATMAP_VALUE_CONFIGAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=513,
-  serialized_end=688,
+  serialized_start=528,
+  serialized_end=703,
 )
 
 _ATMAP_VALUE_DHCPMODE = _descriptor.Descriptor(
@@ -252,8 +252,8 @@ _ATMAP_VALUE_DHCPMODE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=691,
-  serialized_end=841,
+  serialized_start=706,
+  serialized_end=856,
 )
 
 _ATMAP_VALUE = _descriptor.Descriptor(
@@ -318,8 +318,8 @@ _ATMAP_VALUE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=147,
-  serialized_end=940,
+  serialized_start=162,
+  serialized_end=955,
 )
 
 _ATMAP = _descriptor.Descriptor(
@@ -344,8 +344,15 @@ _ATMAP = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='at_parameters', full_name='esp_command_map.AtMap.at_parameters', index=2,
-      number=3, type=11, cpp_type=10, label=1,
+      name='order', full_name='esp_command_map.AtMap.order', index=2,
+      number=3, type=5, cpp_type=1, label=2,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='at_parameters', full_name='esp_command_map.AtMap.at_parameters', index=3,
+      number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -362,7 +369,37 @@ _ATMAP = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=43,
-  serialized_end=940,
+  serialized_end=955,
+)
+
+
+_ATCOMMAND = _descriptor.Descriptor(
+  name='AtCommand',
+  full_name='esp_command_map.AtCommand',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='at_map', full_name='esp_command_map.AtCommand.at_map', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=957,
+  serialized_end=1008,
 )
 
 _ATMAP_VALUE_CONNECTAP.containing_type = _ATMAP_VALUE
@@ -382,7 +419,9 @@ _ATMAP_VALUE.containing_type = _ATMAP
 _ATMAP_VALUE_MUX.containing_type = _ATMAP_VALUE
 _ATMAP_VALUE_CONNECTION.containing_type = _ATMAP_VALUE
 _ATMAP.fields_by_name['at_parameters'].message_type = _ATMAP_VALUE
+_ATCOMMAND.fields_by_name['at_map'].message_type = _ATMAP
 DESCRIPTOR.message_types_by_name['AtMap'] = _ATMAP
+DESCRIPTOR.message_types_by_name['AtCommand'] = _ATCOMMAND
 
 AtMap = _reflection.GeneratedProtocolMessageType('AtMap', (_message.Message,), dict(
 
@@ -422,6 +461,13 @@ _sym_db.RegisterMessage(AtMap.Value)
 _sym_db.RegisterMessage(AtMap.Value.ConnectAp)
 _sym_db.RegisterMessage(AtMap.Value.ConfigAp)
 _sym_db.RegisterMessage(AtMap.Value.DhcpMode)
+
+AtCommand = _reflection.GeneratedProtocolMessageType('AtCommand', (_message.Message,), dict(
+  DESCRIPTOR = _ATCOMMAND,
+  __module__ = 'esp_command_map_pb2'
+  # @@protoc_insertion_point(class_scope:esp_command_map.AtCommand)
+  ))
+_sym_db.RegisterMessage(AtCommand)
 
 
 # @@protoc_insertion_point(module_scope)

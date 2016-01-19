@@ -1,0 +1,21 @@
+package c_skeleton;
+
+message Arguments {
+ required string argument = 1;
+ required string arg_type = 2;
+ }
+
+message Base {
+ required string fn = 1;
+ }
+
+message Cfn {
+ required int32 id = 1;
+ required Base base_fn = 2;
+ repeated Arguments fn_arguments =3;
+ }
+
+message Cfns {
+ repeated Cfn c_fn =1;
+ }
+

@@ -4,7 +4,7 @@ import esp_command_map_pb2
 import sys
 
 _KNOWN_COMMANDS_NA = ["AT","AT+RST","AT+CIPSTATUS","AT+GMR"]
-_KNOWN_COMMANDS_RA = ["AT+CWJAP","AT+CWSAP","AT+CWMODE","AT+CIPSEND","AT+CIPSERVER","AT+CIPSTO","AT+CIOBAUD"]
+_KNOWN_COMMANDS_RA = ["AT+CWJAP","AT+CWSAP","AT+CWMODE","AT+CIPSEND","AT+CIPSTART","AT+CIPSERVER","AT+CIPSTO","AT+CIOBAUD"]
 
 def GenCommandFile(proto, index):
  proto.generic_trm = raw_input("Enter generic ATQi(this means that you'd wirte a coloquial term): ")
